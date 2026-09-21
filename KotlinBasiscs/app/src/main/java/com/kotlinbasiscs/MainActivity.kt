@@ -76,7 +76,7 @@ private fun week03Functions(){
 
     println("== Kotlin Functions ==")
 
-    fun greet(name: String): String {
+    /*fun greet(name: String): String {
         return "Hello, $name!"
     }
 
@@ -90,6 +90,21 @@ private fun week03Functions(){
     println("Sum: ${add(5, -71)}")
     introduce("Kim", 7)
     introduce("Park")
+    */
+
+    fun printAll(vip: Boolean, name: String){
+        println("$vip, $name")
+    }
+
+    fun printMany(vararg msg: String){ //variable arguments
+        for(m in msg) println(m)
+    }
+
+    printAll(true, "dy")
+    printAll(name = "mirae", vip = true) // named arguments
+
+    printMany("A", "B", "C", "D")
+
 }
 
 @Composable
